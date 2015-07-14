@@ -16,12 +16,14 @@ public class BigDecimalUtilsTest {
 	BigDecimal four = new BigDecimal("6.521");
 
 	@Test
-	public void testTwoEqualBigdecimalsAreEqual() {
+	public void testTwoBigdecimalsEquality() {
 		assertTrue(is(three).eq(four));
 		assertTrue(is(one).eq(one));
 		assertTrue(!is(one).eq(two));
+		assertTrue(is(three).eq(6.521));
+		assertTrue(is(1).eq(1));
 	}
-
+	
 	@Test
 	public void testABigdecimalIsGratherThanTheOther() {
 		assertTrue(!is(three).gt(four));
@@ -54,4 +56,63 @@ public class BigDecimalUtilsTest {
 		assertTrue(!is(three).lte(two));
 	}
 	
+	@Test
+	public void testOneAndTwoAreNotEqual() {
+		assertTrue(is(1).notEq(2));
+		assertTrue(is(one).notEq(two));
+	}
+	
+	@Test
+	public void testOneInNotGreaterThanTwo() {
+		assertTrue(is(1).notGt(2));
+		assertTrue(is(one).notGt(two));
+		assertTrue(is(one).notGt(one));
+	}
+	@Test
+	public void testOneInNotGreaterThanOrEqualWithTwo() {
+		assertTrue(is(1).notGte(2));
+		assertTrue(is(one).notGte(two));
+		assertFalse(is(one).notGte(one));
+	}
+	
+	@Test
+	public void testTwoInNotLessThanOne() {
+		assertTrue(is(2).notLt(1));
+		assertTrue(is(two).notLt(one));
+		assertTrue(is(two).notLt(two));
+	}
+	
+	@Test
+	public void testTwoInNotLessThanOrOne() {
+		assertTrue(is(2).notLte(1));
+		assertTrue(is(two).notLte(one));
+		assertFalse(is(two).notLte(two));
+	}
+	
+	@Test
+	public void testOneIsPositive() {
+		assertTrue(is(1).isPositive());
+	}
+	
+	@Test
+	public void testZeroIsNonPositiveAndNonNegetive() {
+		assertTrue(is(0).isNonPositive() && is(0).isNonNegetive());
+	}
+	
+	@Test
+	public void testMinusOneIsNegetive() {
+		assertTrue(is(-1).isNegative());
+	}
+	
+	@Test
+	public void testMinusOneIsNotZero() {
+		assertTrue(is(-1).isNotZero());
+	}
+	
+	@Test
+	public void testZeroIsZero() {
+		assertTrue(is(0).isZero());
+	}
+	
 }
+
