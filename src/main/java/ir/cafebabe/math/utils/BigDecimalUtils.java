@@ -104,6 +104,9 @@ public class BigDecimalUtils {
 	 *      is(three).isNegetive(); // less than zero
 	 *      is(three).isNonPositive(); //less than or equal zero
 	 *      is(three).isNonNegetive(); //greater than or equal zero
+	 *
+	 *      is(three).isNullOrZero(); //is null or zero
+	 *      is(three).notNullOrZero(); //not null or zero
 	 * </code>
 	 * </pre>
 	 * 

@@ -41,7 +41,31 @@ see the same comparison rewritten with this library
     }else {
       // ...
     }
-    
+
+**Other methods in this library:**
+
+      is(bigdecimal).eq(four); //Equal
+      is(bigdecimal).gt(two);    //Greater than
+      is(bigdecimal).gte(one);   //Greater than equal
+      is(bigdecimal).lt(two);  //Less than
+      is(bigdecimal).lte(two); //Less than equal
+ 
+      is(bigdecimal).notEq(four); //Not Equal
+      is(bigdecimal).notGt(two);    //Not Greater than
+      is(bigdecimal).notGte(one);   //Not Greater than equal
+      is(bigdecimal).notLt(two);  //Not Less than
+      is(bigdecimal).notLte(two); //Not Less than equal
+ 
+      is(bigdecimal).isZero(); 	
+      is(bigdecimal).notZero(); 
+      is(bigdecimal).isPositive(); // greater than zero
+      is(bigdecimal).isNegetive(); // less than zero
+      is(bigdecimal).isNonPositive(); //less than or equal zero
+      is(bigdecimal).isNonNegetive(); //greater than or equal zero
+
+      is(bigdecimal).isNullOrZero(); //is null or zero
+      is(bigdecimal).notNullOrZero(); //not null or zero
+
 PS
 --------------------------
 I didn't find any library to handle BigDecimal comparison. If you found one please let me know.
