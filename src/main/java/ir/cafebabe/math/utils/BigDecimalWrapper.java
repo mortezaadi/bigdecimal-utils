@@ -285,4 +285,21 @@ final class BigDecimalWrapper {
 	public boolean isNotZero() {
 		return notEq(ZERO);
 	}
+	
+	/**
+	 * 
+	 * @return true if the value is null or zero
+	 */
+	public boolean isNullOrZero() {
+		return bigDecimal == null || isZero(); 
+	}
+	
+	/**
+	 * 
+	 * @return true if the value is not null nor zero
+	 */
+	public boolean notNullOrZero() {
+		return bigDecimal != null && isNotZero(); 
+	}
+	
 }

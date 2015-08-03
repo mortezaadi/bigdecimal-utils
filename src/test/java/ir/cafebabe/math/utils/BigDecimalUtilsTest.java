@@ -113,6 +113,22 @@ public class BigDecimalUtilsTest {
 	public void testZeroIsZero() {
 		assertTrue(is(0).isZero());
 	}
+
+	@Test
+	public void testNullOrZero() {
+		assertTrue(is(null).isNullOrZero());
+		assertTrue(is(0).isNullOrZero());
+		assertFalse(is(1).isNullOrZero());
+	}
+	
+	@Test
+	public void testNotNullOrZero() {
+		assertFalse(is(null).notNullOrZero());
+		assertFalse(is(0).notNullOrZero());
+		assertTrue(is(1).notNullOrZero());
+	}
+	
+	
 	
 }
 
