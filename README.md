@@ -66,6 +66,16 @@ see the same comparison rewritten with this library
       is(bigdecimal).isNullOrZero(); //is null or zero
       is(bigdecimal).notNullOrZero(); //not null or zero
 
+You can also compare a BigDecimal to other numerical values. for instance instead of writing
+
+      is(bigdecimal).notEq(BigDecimal.valueOf(4));
+
+you can simply write:
+
+      is(bigdecimal).notEq(4);
+      is(bigdecimal).notEq(4L); //or
+      is(bigdecimal).notEq(4D); //or
+       
 PS
 --------------------------
 I didn't find any library to handle BigDecimal comparison. If you found one please let me know.
