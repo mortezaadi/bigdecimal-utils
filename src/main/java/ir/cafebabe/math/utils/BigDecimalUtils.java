@@ -61,9 +61,9 @@ public class BigDecimalUtils {
 	 *      is(three).isZero(); 	
 	 *      is(three).notZero(); 
 	 *      is(three).isPositive(); // greater than zero
-	 *      is(three).isNegetive(); // less than zero
+	 *      is(three).isNegative(); // less than zero
 	 *      is(three).isNonPositive(); //less than or equal zero
-	 *      is(three).isNonNegetive(); //greater than or equal zero
+	 *      is(three).isNonNegative(); //greater than or equal zero
 	 * </code>
 	 * </pre>
 	 * 
@@ -101,9 +101,9 @@ public class BigDecimalUtils {
 	 *      is(three).isZero(); 	
 	 *      is(three).notZero(); 
 	 *      is(three).isPositive(); // greater than zero
-	 *      is(three).isNegetive(); // less than zero
+	 *      is(three).isNegative(); // less than zero
 	 *      is(three).isNonPositive(); //less than or equal zero
-	 *      is(three).isNonNegetive(); //greater than or equal zero
+	 *      is(three).isNonNegative(); //greater than or equal zero
 	 *
 	 *      is(three).isNullOrZero(); //is null or zero
 	 *      is(three).notNullOrZero(); //not null or zero

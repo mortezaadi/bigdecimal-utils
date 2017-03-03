@@ -96,7 +96,7 @@ public class BigDecimalUtilsTest {
 	
 	@Test
 	public void testZeroIsNonPositiveAndNonNegetive() {
-		assertTrue(is(0).isNonPositive() && is(0).isNonNegetive());
+		assertTrue(is(0).isNonPositive() && is(0).isNonNegative());
 	}
 	
 	@Test
