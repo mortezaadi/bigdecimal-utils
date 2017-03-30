@@ -266,7 +266,7 @@ final class BigDecimalWrapper {
 	 * 
 	 * @return true if the value is greater than or equal with zero
 	 */
-	public boolean isNonNegetive() {
+	public boolean isNonNegative() {
 		return gte(ZERO);
 	}
 	
