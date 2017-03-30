@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  * @author adigozalpour
  *
  */
-final class BigDecimalWrapper {
+public final class BigDecimalWrapper {
 
 	private static final int ZERO = 0;
 	private final BigDecimal bigDecimal;
