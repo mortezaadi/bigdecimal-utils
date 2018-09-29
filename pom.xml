@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.cafebabe.math.utils</groupId>
     <artifactId>bigdecimal-utils</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.3</version>
     <packaging>jar</packaging>
     <name>BigDecinalUtils</name>
     <description>BigDecimal utility to increase readability of using BigDecimal in calculations.</description>
@@ -19,7 +19,7 @@
         <url>https://github.com/mortezaadi/bigdecimal-utils</url>
         <connection>scm:git://github.com/mortezaadi/bigdecimal-utils.git</connection>
         <developerConnection>scm:git:git@github.com:mortezaadi/bigdecimal-utils.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>bigdecimal-utils-1.3</tag>
     </scm>
 
     <developers>
