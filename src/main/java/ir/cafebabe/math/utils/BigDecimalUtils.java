@@ -34,9 +34,10 @@ import java.math.BigDecimal;
  * @author adigozalpour
  *
  */
-public class BigDecimalUtils {
+public final class BigDecimalUtils {
 
 	private BigDecimalUtils() {
+		throw new IllegalStateException( "Utility class can not be instanciated. to start use static is() function" );
 	}
 
 	/**
