@@ -3,6 +3,10 @@
     <groupId>ir.cafebabe.math.utils</groupId>
     <artifactId>bigdecimal-utils</artifactId>
     <version>1.3-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>BigDecinalUtils</name>
+    <description>BigDecimal utility to increase readability of using BigDecimal in calculations.</description>
+    <url>http://www.cafebabe.ir</url>
 
     <licenses>
         <license>
