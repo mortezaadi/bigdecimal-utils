@@ -13,13 +13,13 @@ import java.math.BigDecimal;
  * 
  * <pre>
  * <code>
- *     if(balance.compareTo(maxAmount) < 0))
+ *     if(balance.compareTo(maxAmount) &lt; 0))
  * </code>
  * </pre>
  * 
  * the code above try to check condition "balance &lt; maxAmount". You
  * definitely spotted the problem. now imagine how hard it can be if you have to
- * read some code with a lot of {@link BigDecimal} comparison!! </b>
+ * read some code with a lot of {@link BigDecimal} comparison!!
  * {@link BigDecimalUtils} makes comparison of {@link BigDecimal}s more easier
  * and more readable than the comparator method. look how above code are written
  * by the help of this library.
@@ -40,8 +40,8 @@ public class BigDecimalUtils {
 	}
 
 	/**
-	 * Entry points of {@link BigDecimalUtils} <br/>
-	 * <br/>
+	 * Entry points of {@link BigDecimalUtils}
+	 *
 	 * Example usage:
 	 * 
 	 * <pre>
@@ -71,8 +71,7 @@ public class BigDecimalUtils {
 	 *            your {@link BigDecimal}
 	 * 
 	 * @return {@link BigDecimalWrapper}
-	 * 
-	 * @see #isNot(BigDecimal)
+	 *
 	 */
 	public static BigDecimalWrapper is(BigDecimal decimal) {
 
@@ -80,8 +79,7 @@ public class BigDecimalUtils {
 	}
 
 	/**
-	 * Entry points of {@link BigDecimalUtils} <br/>
-	 * <br/>
+	 * Entry points of {@link BigDecimalUtils}
 	 * Example usage:
 	 * 
 	 * <pre>
@@ -115,10 +113,9 @@ public class BigDecimalUtils {
 	 * 
 	 * @return {@link BigDecimalWrapper}
 	 * 
-	 * @see #isNot(BigDecimal)
 	 */
-	public static BigDecimalWrapper is(double dbl) {
-		return is(BigDecimal.valueOf(dbl));
+	public static BigDecimalWrapper is(double decimal) {
+		return is(BigDecimal.valueOf(decimal));
 	}
 
 }
