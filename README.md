@@ -73,9 +73,9 @@ see the same comparison rewritten with this library
       is(bigdecimal).isZero(); 	
       is(bigdecimal).notZero(); 
       is(bigdecimal).isPositive(); // greater than zero
-      is(bigdecimal).isNegetive(); // less than zero
+      is(bigdecimal).isNegative(); // less than zero
       is(bigdecimal).isNonPositive(); // less than or equal zero
-      is(bigdecimal).isNonNegetive(); // greater than or equal zero
+      is(bigdecimal).isNonNegative(); // greater than or equal zero
 
       is(bigdecimal).isNullOrZero(); // is null or zero
       is(bigdecimal).notNullOrZero(); // not null or zero
