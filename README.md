@@ -5,7 +5,7 @@ BigDecimal Utils
 Comparing BigDecimal is always hard to read and so error prone. I wrote this library
 to make comparison of BigDecimal more comfortable and more readable. 
 
-Is BigDecimal Comparison happens?
+Is BigDecimal Comparison happens
 ---------------------------------
 Sure! The only reliable way to work with monetary amount is to use BigDecimal. So if you have 
 Money somewhere in your code, you probably faced comparing two BigDecimals a lot.
@@ -24,7 +24,7 @@ to feel what it looks like take a look at this line of code :
 the code above try to check condition "balance < amount && amount >= minAmount". You
 definitely spotted the problem. But how to solve this?
 
-How I Solve the Problem?
+How I Solve the Problem
 ------------------------
 BigDecimalUtils is a simple library to make comparing BigDecimal more readable and less error prone.
 see the same comparison rewritten with this library
