@@ -2,6 +2,7 @@
 [![](https://jitpack.io/v/mortezaadi/bigdecimal-utils.svg)](https://jitpack.io/#mortezaadi/bigdecimal-utils)
 [![Maven Central](https://img.shields.io/maven-central/v/ir.cafebabe.math.utils/bigdecimal-utils.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22ir.cafebabe.math.utils%22%20AND%20a:%22bigdecimal-utils%22)
 [![Build Status](https://travis-ci.org/mortezaadi/bigdecimal-utils.svg?branch=master)](https://travis-ci.org/mortezaadi/bigdecimal-utils)
+[![codecov](https://codecov.io/gh/mortezaadi/bigdecimal-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/mortezaadi/bigdecimal-utils)
 
 BigDecimal Utils
 ===============================================
