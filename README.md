@@ -1,9 +1,31 @@
 [![](https://jitpack.io/v/mortezaadi/bigdecimal-utils.svg)](https://jitpack.io/#mortezaadi/bigdecimal-utils)
+[![Maven Central](https://img.shields.io/maven-central/v/ir.cafebabe.math.utils/bigdecimal-utils.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22ir.cafebabe.math.utils%22%20AND%20a:%22bigdecimal-utils%22)
 
 BigDecimal Utils
 ===============================================
 Comparing BigDecimal is always hard to read and so error prone. I wrote this library
 to make comparison of BigDecimal more comfortable and more readable. 
+
+Maven:
+```xml
+    <dependency>
+  	<groupId>ir.cafebabe.math.utils</groupId>
+  	<artifactId>bigdecimal-utils</artifactId>
+  	<version>1.3</version>
+    </dependency>
+```
+
+Gradle:
+
+    compile 'ir.cafebabe.math.utils:bigdecimal-utils:1.3'
+
+Gradle Kotlin DSL:
+
+    compile(group = "ir.cafebabe.math.utils", name = "bigdecimal-utils", version = "1.3")
+    
+Scala SBT:
+
+    libraryDependencies += "ir.cafebabe.math.utils" % "bigdecimal-utils" % "1.3"
 
 Is BigDecimal Comparison happens
 ---------------------------------
@@ -52,9 +74,9 @@ see the same comparison rewritten with this library
       is(bigdecimal).isZero(); 	
       is(bigdecimal).notZero(); 
       is(bigdecimal).isPositive(); // greater than zero
-      is(bigdecimal).isNegetive(); // less than zero
+      is(bigdecimal).isNegative(); // less than zero
       is(bigdecimal).isNonPositive(); // less than or equal zero
-      is(bigdecimal).isNonNegetive(); // greater than or equal zero
+      is(bigdecimal).isNonNegative(); // greater than or equal zero
 
       is(bigdecimal).isNullOrZero(); // is null or zero
       is(bigdecimal).notNullOrZero(); // not null or zero
