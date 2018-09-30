@@ -7,12 +7,13 @@ Comparing BigDecimal is always hard to read and so error prone. I wrote this lib
 to make comparison of BigDecimal more comfortable and more readable. 
 
 Maven:
-
+```xml
     <dependency>
   	<groupId>ir.cafebabe.math.utils</groupId>
   	<artifactId>bigdecimal-utils</artifactId>
   	<version>1.3</version>
     </dependency>
+```
 
 Gradle:
 
