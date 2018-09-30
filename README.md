@@ -7,6 +7,7 @@ Comparing BigDecimal is always hard to read and so error prone. I wrote this lib
 to make comparison of BigDecimal more comfortable and more readable. 
 
 Maven:
+
     <dependency>
   	<groupId>ir.cafebabe.math.utils</groupId>
   	<artifactId>bigdecimal-utils</artifactId>
@@ -14,12 +15,15 @@ Maven:
     </dependency>
 
 Gradle:
+
     compile 'ir.cafebabe.math.utils:bigdecimal-utils:1.3'
 
 Gradle Kotlin DSL:
+
     compile(group = "ir.cafebabe.math.utils", name = "bigdecimal-utils", version = "1.3")
     
 Scala SBT:
+
     libraryDependencies += "ir.cafebabe.math.utils" % "bigdecimal-utils" % "1.3"
 
 Is BigDecimal Comparison happens?
