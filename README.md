@@ -28,6 +28,28 @@ Scala SBT:
     libraryDependencies += "ir.cafebabe.math.utils" % "bigdecimal-utils" % "1.3"
 
 Is BigDecimal Comparison happens
+Maven:
+```xml
+<dependency>
+    <groupId>ir.cafebabe.math.utils</groupId>
+    <artifactId>bigdecimal-utils</artifactId>
+    <version>1.3</version>
+</dependency>
+```
+
+Gradle:
+
+    compile 'ir.cafebabe.math.utils:bigdecimal-utils:1.3'
+
+Gradle Kotlin DSL:
+
+    compile(group = "ir.cafebabe.math.utils", name = "bigdecimal-utils", version = "1.3")
+    
+Scala SBT:
+
+    libraryDependencies += "ir.cafebabe.math.utils" % "bigdecimal-utils" % "1.3"
+
+Is BigDecimal Comparison happens
 ---------------------------------
 Sure! The only reliable way to work with monetary amount is to use BigDecimal. So if you have 
 Money somewhere in your code, you probably faced comparing two BigDecimals a lot.
