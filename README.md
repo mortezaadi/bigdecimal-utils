@@ -1,6 +1,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a4a8e13df7804fd6a4d5081580dc1469)](https://app.codacy.com/app/mortezaadi/bigdecimal-utils?utm_source=github.com&utm_medium=referral&utm_content=mortezaadi/bigdecimal-utils&utm_campaign=Badge_Grade_Dashboard)
 [![](https://jitpack.io/v/mortezaadi/bigdecimal-utils.svg)](https://jitpack.io/#mortezaadi/bigdecimal-utils)
 [![Maven Central](https://img.shields.io/maven-central/v/ir.cafebabe.math.utils/bigdecimal-utils.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22ir.cafebabe.math.utils%22%20AND%20a:%22bigdecimal-utils%22)
+[![Build Status](https://travis-ci.org/mortezaadi/bigdecimal-utils.svg?branch=master)](https://travis-ci.org/mortezaadi/bigdecimal-utils)
 
 BigDecimal Utils
 ===============================================
