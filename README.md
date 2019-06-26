@@ -33,27 +33,27 @@ Scala SBT:
 Is BigDecimal Comparison happens
 ---------------------------------
 Sure! The only reliable way to work with monetary amount is to use BigDecimal. So if you have 
-Money somewhere in your code, you probably faced comparing two BigDecimals a lot.
+Money somewhere in your code, you probably found yourself comparing two BigDecimals.
 
 What's wrong with BigDecimal comparison
 --------------------------------------
-Well, As you should know, if you use **equal** method of BigDecimal to compare two objects they only considered equal if they are equal in value and scale thus 2.0 is not equal to 2.00 when compared by
-**equal** method refer to JavaDocs.
+Well, As you should know, if you use **equal** method of BigDecimal to compare two objects, they only considered equal if they are equal in value and scale thus 2.0 is not equal to 2.00 when compared by
+**equal** method (refer to JavaDocs).
 
 To compare BigDecimal without considering their scale we should use **compareTo** method. This is 
-the most common and correct way to compare two BigDecimals. However it is error prone and lacks readability.
-to feel what it looks like take a look at this line of code :
+the most common and correct way to compare two BigDecimals. However it is so error prone and lacks readability.
+To feel what it looks like, take a look at this line of code :
 
     return balance.compareTo(amount) < 0) && amount.compareTo(anotherAmount) >= 0));
 
-the code above try to check condition "balance < amount && amount >= anotherAmount". You
-definitely spotted the problem. The **compareTo** is not clear nor readable. 
+The above code tris to check the condition in wich "balance < amount && amount >= anotherAmount". You
+definitely spotted the issue here. The **compareTo** is not clear nor readable. 
 But how to solve this?
 
 How I Solve the Problem
 ------------------------
-BigDecimalUtils is a simple library to make comparing BigDecimal more readable and less error prone.
-see the same comparison rewritten with this library
+BigDecimalUtils is a simple library that enable us to campare BigDecimal objects in more readable and less error prone way.
+see the same comparison rewritten by this library
 
 	import static ir.cafebabe.math.utils.BigDecimalUtils.*;
 
