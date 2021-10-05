@@ -37,7 +37,7 @@ import java.math.BigDecimal;
 public final class BigDecimalUtils {
 
 	private BigDecimalUtils() {
-		throw new IllegalStateException( "Utility class can not be instanciated. to start use static is() function" );
+		throw new IllegalStateException( "Utility class can not be instantiated. to start use static is() function" );
 	}
 
 	/**
@@ -69,13 +69,12 @@ public final class BigDecimalUtils {
 	 * </pre>
 	 * 
 	 * @param decimal
-	 *            your {@link BigDecimal}
+	 *            your {@link BigDecimal}, {@link Double} or {@link Long}
 	 * 
 	 * @return {@link BigDecimalWrapper}
 	 *
 	 */
 	public static BigDecimalWrapper is(BigDecimal decimal) {
-
 		return new BigDecimalWrapper(decimal);
 	}
 
@@ -117,6 +116,10 @@ public final class BigDecimalUtils {
 	 */
 	public static BigDecimalWrapper is(double decimal) {
 		return is(BigDecimal.valueOf(decimal));
+	}
+
+	public static BigDecimalWrapper is(long val) {
+		return is(BigDecimal.valueOf(val));
 	}
 
 }

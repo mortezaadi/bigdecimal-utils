@@ -58,7 +58,7 @@ public class BigDecimalUtilsTest {
 	
 	@Test
 	public void testOneAndTwoAreNotEqual() {
-		assertTrue(is(1).notEq(2));
+		assertTrue(is(1).notEq(2.1));
 		assertTrue(is(one).notEq(two));
 	}
 	
@@ -77,7 +77,7 @@ public class BigDecimalUtilsTest {
 	
 	@Test
 	public void testTwoInNotLessThanOne() {
-		assertTrue(is(2).notLt(1));
+		assertTrue(is(2.1).notLt(1));
 		assertTrue(is(two).notLt(one));
 		assertTrue(is(two).notLt(two));
 	}

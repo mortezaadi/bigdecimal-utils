@@ -41,6 +41,17 @@ public final class BigDecimalWrapper {
 	}
 
 	/**
+	 * Checks whether input argument is <i><b> equal </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} true if two are equal.
+	 */
+	public boolean eq(long val) {
+		return eq(BigDecimal.valueOf(val));
+	}
+
+	/**
 	 * Checks whether input argument is <i><b> greater than </b></i> to the provided
 	 * {@link BigDecimal} or not;
 	 *
@@ -63,6 +74,17 @@ public final class BigDecimalWrapper {
 	}
 
 	/**
+	 * Checks whether input argument is <i><b> greater than </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean gt(long val) {
+		return gt(BigDecimal.valueOf(val));
+	}
+
+	/**
 	 * Checks whether input argument is <i><b> greater than equal </b></i> to the provided
 	 * {@link BigDecimal} or not;
 	 *
@@ -75,13 +97,24 @@ public final class BigDecimalWrapper {
 
 	/**
 	 * Checks whether input argument is <i><b> greater than equal </b></i> to the provided
-	 * {@link BigDecimal} or not;
+	 * {@link Double} or not;
 	 *
 	 * @param decimal value to compare
 	 * @return {@link Boolean} value
 	 */
 	public boolean gte(double decimal) {
 		return gte(BigDecimal.valueOf(decimal));
+	}
+
+	/**
+	 * Checks whether input argument is <i><b> greater than equal </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean gte(long val) {
+		return gte(BigDecimal.valueOf(val));
 	}
 
 	/**
@@ -97,13 +130,24 @@ public final class BigDecimalWrapper {
 
 	/**
 	 * Checks whether input argument is <i><b> less than </b></i> to the provided
-	 * {@link BigDecimal} or not;
+	 * {@link Double} or not;
 	 *
 	 * @param decimal value to compare
 	 * @return {@link Boolean} value
 	 */
 	public boolean lt(double decimal) {
 		return lt(BigDecimal.valueOf(decimal));
+	}
+
+	/**
+	 * Checks whether input argument is <i><b> less than </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean lt(long val) {
+		return lt(BigDecimal.valueOf(val));
 	}
 
 	/**
@@ -119,13 +163,24 @@ public final class BigDecimalWrapper {
 
 	/**
 	 * Checks whether input argument is <i><b> less than equal </b></i> to the provided
-	 * {@link BigDecimal} or not;
+	 * {@link Double} or not;
 	 *
 	 * @param decimal value to compare
 	 * @return {@link Boolean} value
 	 */
 	public boolean lte(double decimal) {
 		return lte(BigDecimal.valueOf(decimal));
+	}
+
+	/**
+	 * Checks whether input argument is <i><b> less than equal </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean lte(long val) {
+		return lte(BigDecimal.valueOf(val));
 	}
 
 	/**
@@ -151,6 +206,17 @@ public final class BigDecimalWrapper {
 	}
 
 	/**
+	 * Checks whether input argument is <i><b> not equal </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} true if two are not equal.
+	 */
+	public boolean notEq(long val) {
+		return !eq(val);
+	}
+
+	/**
 	 * Checks whether input argument is <i><b> not greater than </b></i> to the provided
 	 * {@link BigDecimal} or not;
 	 *
@@ -173,6 +239,18 @@ public final class BigDecimalWrapper {
 	}
 
 	/**
+	 * Checks whether input argument is <i><b> not greater than </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean notGt(long val) {
+		return !gt(val);
+	}
+
+
+	/**
 	 * Checks whether input argument is <i><b> not greater than or equal </b></i> to the provided
 	 * {@link BigDecimal} or not;
 	 *
@@ -192,6 +270,17 @@ public final class BigDecimalWrapper {
 	 */
 	public boolean notGte(double decimal) {
 		return !gte(decimal);
+	}
+
+	/**
+	 * Checks whether input argument is <i><b> not greater than or equal </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean notGte(long val) {
+		return !gte(val);
 	}
 
 	/**
@@ -217,6 +306,17 @@ public final class BigDecimalWrapper {
 	}
 
 	/**
+	 * Checks whether input argument is <i><b> not less than </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean notLt(long val) {
+		return !lt(val);
+	}
+
+	/**
 	 * Checks whether input argument is <i><b> not less than equal </b></i> to the provided
 	 * {@link BigDecimal} or not;
 	 *
@@ -236,6 +336,16 @@ public final class BigDecimalWrapper {
 	 */
 	public boolean notLte(double decimal) {
 		return !lte(decimal);
+	}
+/**
+	 * Checks whether input argument is <i><b> not less than equal </b></i> to the provided
+	 * {@link Long} or not;
+	 *
+	 * @param val value to compare
+	 * @return {@link Boolean} value
+	 */
+	public boolean notLte(long val) {
+		return !lte(val);
 	}
 
 	/**
@@ -302,4 +412,7 @@ public final class BigDecimalWrapper {
 		return bigDecimal != null && isNotZero();
 	}
 
+	public BigDecimal getBigDecimal() {
+		return bigDecimal;
+	}
 }
