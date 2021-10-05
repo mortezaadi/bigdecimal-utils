@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.cafebabe.math.utils</groupId>
     <artifactId>bigdecimal-utils</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.5-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>BigDecinalUtils</name>
     <description>BigDecimal utility to increase readability of using BigDecimal in calculations.</description>
