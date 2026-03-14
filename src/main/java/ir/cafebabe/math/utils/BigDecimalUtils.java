@@ -53,18 +53,15 @@ public final class BigDecimalUtils {
 	 * 		is(three).lt(two);  //Less than
 	 * 		is(three).lte(two); //Less than equal
 	 * 
-	 *      is(three).notEq(four); //Not Equal
-	 * 		is(two).notGt(two);    //Not Greater than
-	 * 		is(two).notGte(one);   //Not Greater than equal
-	 * 		is(three).notLt(two);  //Not Less than
-	 * 		is(three).notLte(two); //Not Less than equal
+	 *      is(three).not().eq(four);  //Not Equal
+	 * 		is(two).not().gt(two);   //Not Greater than
+	 * 		is(two).not().gte(one); //Not Greater than equal
+	 * 		is(three).not().lt(two);  //Not Less than
+	 * 		is(three).not().lte(two); //Not Less than equal
 	 * 
-	 *      is(three).isZero(); 	
-	 *      is(three).notZero(); 
-	 *      is(three).isPositive(); // greater than zero
-	 *      is(three).isNegative(); // less than zero
-	 *      is(three).isNonPositive(); //less than or equal zero
-	 *      is(three).isNonNegative(); //greater than or equal zero
+	 *      is(three).zero();  is(three).not().zero();
+	 *      is(three).positive();  is(three).negative();
+	 *      is(three).not().positive();  is(three).not().negative();
 	 * </code>
 	 * </pre>
 	 * 
@@ -90,21 +87,16 @@ public final class BigDecimalUtils {
 	 * 		is(three).lt(two);  //Less than
 	 * 		is(three).lte(two); //Less than equal
 	 * 
-	 *      is(three).notEq(four); //Not Equal
-	 * 		is(two).notGt(two);    //Not Greater than
-	 * 		is(two).notGte(one);   //Not Greater than equal
-	 * 		is(three).notLt(two);  //Not Less than
-	 * 		is(three).notLte(two); //Not Less than equal
+	 *      is(three).not().eq(four);  //Not Equal
+	 * 		is(two).not().gt(two);   //Not Greater than
+	 * 		is(two).not().gte(one); //Not Greater than equal
+	 * 		is(three).not().lt(two);  //Not Less than
+	 * 		is(three).not().lte(two); //Not Less than equal
 	 * 
-	 *      is(three).isZero(); 	
-	 *      is(three).notZero(); 
-	 *      is(three).isPositive(); // greater than zero
-	 *      is(three).isNegative(); // less than zero
-	 *      is(three).isNonPositive(); //less than or equal zero
-	 *      is(three).isNonNegative(); //greater than or equal zero
-	 *
-	 *      is(three).isNullOrZero(); //is null or zero
-	 *      is(three).notNullOrZero(); //not null or zero
+	 *      is(three).zero();  is(three).not().zero();
+	 *      is(three).positive();  is(three).negative();
+	 *      is(three).not().positive();  is(three).not().negative();
+	 *      is(three).nullOrZero();  is(three).not().nullOrZero();
 	 * </code>
 	 * </pre>
 	 * 
@@ -120,6 +112,16 @@ public final class BigDecimalUtils {
 
 	public static BigDecimalWrapper is(long val) {
 		return is(BigDecimal.valueOf(val));
+	}
+
+	/**
+	 * Entry point for {@code int} values. Delegates to {@link #is(long)}.
+	 *
+	 * @param val the value to wrap
+	 * @return {@link BigDecimalWrapper}
+	 */
+	public static BigDecimalWrapper is(int val) {
+		return is((long) val);
 	}
 
 }

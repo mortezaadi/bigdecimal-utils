@@ -4,9 +4,15 @@
     <artifactId>bigdecimal-utils</artifactId>
     <version>1.5-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>BigDecinalUtils</name>
+    <name>BigDecimalUtils</name>
     <description>BigDecimal utility to increase readability of using BigDecimal in calculations.</description>
     <url>http://www.cafebabe.ir</url>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <licenses>
         <license>
@@ -73,10 +79,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.2</version>
+                <version>3.11.0</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             
@@ -91,8 +98,9 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration> 
-                  <source>8</source> 
+                <configuration>
+                    <source>8</source>
+                    <doclint>none</doclint>
                 </configuration> 
             </plugin>
             <plugin>

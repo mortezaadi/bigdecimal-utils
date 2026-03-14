@@ -46,13 +46,13 @@ To feel what it looks like, take a look at this line of code :
 
     return balance.compareTo(amount) < 0) && amount.compareTo(anotherAmount) >= 0));
 
-The above code tris to check the condition in wich "balance < amount && amount >= anotherAmount". You
+The above code tries to check the condition in which "balance < amount && amount >= anotherAmount". You
 definitely spotted the issue here. The **compareTo** is not clear nor readable. 
 But how to solve this?
 
 How I Solve the Problem
 ------------------------
-BigDecimalUtils is a simple library that enable us to campare BigDecimal objects in more readable and less error prone way.
+BigDecimalUtils is a simple library that enables us to compare BigDecimal objects in a more readable and less error-prone way.
 see the same comparison rewritten by this library
 
 	import static ir.cafebabe.math.utils.BigDecimalUtils.*;
@@ -69,31 +69,31 @@ see the same comparison rewritten by this library
       is(bigdecimal).lt(two); // less than
       is(bigdecimal).lte(two); // less than equal
  
-      is(bigdecimal).notEq(four); // not equal
-      is(bigdecimal).notGt(two); // not greater than
-      is(bigdecimal).notGte(one); // not greater than equal
-      is(bigdecimal).notLt(two); // not less than
-      is(bigdecimal).notLte(two); // not less than equal
+      is(bigdecimal).not().eq(four);   // not equal
+      is(bigdecimal).not().gt(two);   // not greater than
+      is(bigdecimal).not().gte(one);  // not greater than equal
+      is(bigdecimal).not().lt(two);   // not less than
+      is(bigdecimal).not().lte(two);  // not less than equal
  
-      is(bigdecimal).isZero(); 	
-      is(bigdecimal).notZero(); 
-      is(bigdecimal).isPositive(); // greater than zero
-      is(bigdecimal).isNegative(); // less than zero
-      is(bigdecimal).isNonPositive(); // less than or equal zero
-      is(bigdecimal).isNonNegative(); // greater than or equal zero
+      is(bigdecimal).zero();                     // "is x zero?"
+      is(bigdecimal).not().zero();              // "is x not zero?"
+      is(bigdecimal).positive();                // "is x positive?"
+      is(bigdecimal).negative();                // "is x negative?"
+      is(bigdecimal).not().positive();         // "is x not positive?" (<= 0)
+      is(bigdecimal).not().negative();          // "is x not negative?" (>= 0)
 
-      is(bigdecimal).isNullOrZero(); // is null or zero
-      is(bigdecimal).notNullOrZero(); // not null or zero
+      is(bigdecimal).nullOrZero();              // "is x null or zero?"
+      is(bigdecimal).not().nullOrZero();        // "is x not (null or zero)?"
 
 You can also compare a BigDecimal to other numerical values. For instance instead of writing
 
-      is(bigdecimal).notEq(BigDecimal.valueOf(4));
+      is(bigdecimal).not().eq(BigDecimal.valueOf(4));
 
 you can simply and interchangeably write:
 
-      is(bigdecimal).notEq(4);
-      is(bigdecimal).notEq(4L);
-      is(bigdecimal).notEq(4D);
+      is(bigdecimal).not().eq(4);
+      is(bigdecimal).not().eq(4L);
+      is(bigdecimal).not().eq(4D);
        
 Why BigDecimal Utils?
 --------------------------
