@@ -1,4 +1,4 @@
-package ir.cafebabe.math.utils;
+package io.github.mortezaadi.bigdecimalutils;
 
 import java.math.BigDecimal;
 

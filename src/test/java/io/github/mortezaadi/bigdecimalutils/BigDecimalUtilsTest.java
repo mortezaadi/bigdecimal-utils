@@ -1,8 +1,7 @@
-package ir.cafebabe.math.utils;
+package io.github.mortezaadi.bigdecimalutils;
 
 import static org.junit.Assert.*;
-
-import static ir.cafebabe.math.utils.BigDecimalUtils.*;
+import static io.github.mortezaadi.bigdecimalutils.BigDecimalUtils.*;
 
 import java.math.BigDecimal;
 
@@ -195,4 +194,3 @@ public class BigDecimalUtilsTest {
 		assertFalse(is(2).not().not().gt(3));
 	}
 }
-

@@ -1,6 +1,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a4a8e13df7804fd6a4d5081580dc1469)](https://app.codacy.com/app/mortezaadi/bigdecimal-utils?utm_source=github.com&utm_medium=referral&utm_content=mortezaadi/bigdecimal-utils&utm_campaign=Badge_Grade_Dashboard)
 [![](https://jitpack.io/v/mortezaadi/bigdecimal-utils.svg)](https://jitpack.io/#mortezaadi/bigdecimal-utils)
-[![Maven Central](https://img.shields.io/maven-central/v/ir.cafebabe.math.utils/bigdecimal-utils.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22ir.cafebabe.math.utils%22%20AND%20a:%22bigdecimal-utils%22)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.mortezaadi/bigdecimal-utils.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.mortezaadi%22%20AND%20a:%22bigdecimal-utils%22)
 [![CI](https://github.com/mortezaadi/bigdecimal-utils/actions/workflows/ci.yml/badge.svg)](https://github.com/mortezaadi/bigdecimal-utils/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/mortezaadi/bigdecimal-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/mortezaadi/bigdecimal-utils)
 
@@ -12,7 +12,7 @@ to make comparison of BigDecimal more comfortable and more readable.
 Maven:
 ```xml
     <dependency>
-  	<groupId>ir.cafebabe.math.utils</groupId>
+  	<groupId>io.github.mortezaadi</groupId>
   	<artifactId>bigdecimal-utils</artifactId>
   	<version>2.1.0</version>
     </dependency>
@@ -20,15 +20,15 @@ Maven:
 
 Gradle:
 
-    compile 'ir.cafebabe.math.utils:bigdecimal-utils:1.3'
+    implementation 'io.github.mortezaadi:bigdecimal-utils:2.1.0'
 
 Gradle Kotlin DSL:
 
-    compile(group = "ir.cafebabe.math.utils", name = "bigdecimal-utils", version = "1.3")
+    implementation("io.github.mortezaadi:bigdecimal-utils:2.1.0")
     
 Scala SBT:
 
-    libraryDependencies += "ir.cafebabe.math.utils" % "bigdecimal-utils" % "1.3"
+    libraryDependencies += "io.github.mortezaadi" % "bigdecimal-utils" % "2.1.0"
 
 Is BigDecimal Comparison happens
 ---------------------------------
@@ -55,7 +55,7 @@ How I Solve the Problem
 BigDecimalUtils is a simple library that enables us to compare BigDecimal objects in a more readable and less error-prone way.
 see the same comparison rewritten by this library
 
-	import static ir.cafebabe.math.utils.BigDecimalUtils.*;
+	import static io.github.mortezaadi.bigdecimalutils.BigDecimalUtils.*;
 
     // ...
 
