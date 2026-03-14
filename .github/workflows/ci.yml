@@ -20,7 +20,7 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        run: mvn clean verify -B
+        run: mvn clean verify -B -Dgpg.skip=true
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
