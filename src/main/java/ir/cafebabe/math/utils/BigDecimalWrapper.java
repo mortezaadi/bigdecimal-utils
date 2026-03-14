@@ -27,7 +27,7 @@ public final class BigDecimalWrapper {
 
 	/**
 	 * Returns a wrapper that negates the result of the next comparison.
-	 * Use for fluent "not" style: {@code is(x).not().lte(y)} for "x > y".
+	 * Use for fluent "not" style: {@code is(x).not().lte(y)} for "x &gt; y".
 	 *
 	 * @return a wrapper with negated comparison semantics
 	 */
