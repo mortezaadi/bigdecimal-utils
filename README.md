@@ -63,17 +63,19 @@ see the same comparison rewritten by this library
 
 **Other methods in this library:**
 
-      is(bigdecimal).eq(four); // equal
-      is(bigdecimal).gt(two); // greater than
-      is(bigdecimal).gte(one); // greater than equal
-      is(bigdecimal).lt(two); // less than
-      is(bigdecimal).lte(two); // less than equal
+  Comparisons (short and long names are equivalent):
+
+      is(bigdecimal).eq(four);    // or .equal(four)     — equal
+      is(bigdecimal).gt(two);    // or .greaterThan(two)
+      is(bigdecimal).gte(one);   // or .greaterThanOrEqual(one)
+      is(bigdecimal).lt(two);    // or .lessThan(two)
+      is(bigdecimal).lte(two);   // or .lessThanOrEqual(two)
  
-      is(bigdecimal).not().eq(four);   // not equal
-      is(bigdecimal).not().gt(two);   // not greater than
-      is(bigdecimal).not().gte(one);  // not greater than equal
-      is(bigdecimal).not().lt(two);   // not less than
-      is(bigdecimal).not().lte(two);  // not less than equal
+      is(bigdecimal).not().eq(four);   // or .not().equal(four)
+      is(bigdecimal).not().gt(two);    // or .not().greaterThan(two)
+      is(bigdecimal).not().gte(one);   // or .not().greaterThanOrEqual(one)
+      is(bigdecimal).not().lt(two);    // or .not().lessThan(two)
+      is(bigdecimal).not().lte(two);   // or .not().lessThanOrEqual(two)
  
       is(bigdecimal).zero();                     // "is x zero?"
       is(bigdecimal).not().zero();              // "is x not zero?"

@@ -47,13 +47,13 @@ public final class BigDecimalUtils {
 	 * 
 	 * <pre>
 	 * <code>
-	 *      is(three).eq(four); //Equal
-	 * 		is(two).gt(two);    //Greater than
-	 * 		is(two).gte(one);   //Greater than equal
-	 * 		is(three).lt(two);  //Less than
-	 * 		is(three).lte(two); //Less than equal
+	 *      is(three).eq(four); // or .equal(four)
+	 * 		is(two).gt(two);    // or .greaterThan(two)
+	 * 		is(two).gte(one);   // or .greaterThanOrEqual(one)
+	 * 		is(three).lt(two);  // or .lessThan(two)
+	 * 		is(three).lte(two); // or .lessThanOrEqual(two)
 	 * 
-	 *      is(three).not().eq(four);  //Not Equal
+	 *      is(three).not().eq(four);  // or .not().equal(four)
 	 * 		is(two).not().gt(two);   //Not Greater than
 	 * 		is(two).not().gte(one); //Not Greater than equal
 	 * 		is(three).not().lt(two);  //Not Less than
@@ -81,13 +81,13 @@ public final class BigDecimalUtils {
 	 * 
 	 * <pre>
 	 * <code>
-	 *      is(three).eq(four); //Equal
-	 * 		is(two).gt(two);    //Greater than
-	 * 		is(two).gte(one);   //Greater than equal
-	 * 		is(three).lt(two);  //Less than
-	 * 		is(three).lte(two); //Less than equal
+	 *      is(three).eq(four); // or .equal(four)
+	 * 		is(two).gt(two);    // or .greaterThan(two)
+	 * 		is(two).gte(one);   // or .greaterThanOrEqual(one)
+	 * 		is(three).lt(two);  // or .lessThan(two)
+	 * 		is(three).lte(two); // or .lessThanOrEqual(two)
 	 * 
-	 *      is(three).not().eq(four);  //Not Equal
+	 *      is(three).not().eq(four);  // or .not().equal(four)
 	 * 		is(two).not().gt(two);   //Not Greater than
 	 * 		is(two).not().gte(one); //Not Greater than equal
 	 * 		is(three).not().lt(two);  //Not Less than

@@ -193,4 +193,15 @@ public class BigDecimalUtilsTest {
 		assertTrue(is(2).lte(3));
 		assertFalse(is(2).not().not().gt(3));
 	}
+
+	@Test
+	public void testLongFormEqualsShortForm() {
+		// equal / greaterThan / greaterThanOrEqual / lessThan / lessThanOrEqual same as eq/gt/gte/lt/lte
+		assertTrue(is(one).equal(two) == is(one).eq(two));
+		assertTrue(is(two).greaterThan(one) == is(two).gt(one));
+		assertTrue(is(two).greaterThanOrEqual(one) == is(two).gte(one));
+		assertTrue(is(one).lessThan(two) == is(one).lt(two));
+		assertTrue(is(three).lessThanOrEqual(four) == is(three).lte(four));
+		assertTrue(is(1).not().lessThanOrEqual(2) == is(1).not().lte(2));
+	}
 }

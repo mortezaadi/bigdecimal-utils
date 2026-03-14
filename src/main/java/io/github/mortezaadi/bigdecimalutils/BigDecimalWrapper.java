@@ -5,8 +5,12 @@ import java.math.BigDecimal;
 /**
  * Wrapper of {@link BigDecimal} that simplifies comparison.
  * <p>
+ * You can use short names ({@code eq}, {@code gt}, {@code gte}, {@code lt}, {@code lte})
+ * or long names ({@code equal}, {@code greaterThan}, {@code greaterThanOrEqual},
+ * {@code lessThan}, {@code lessThanOrEqual}); they are equivalent.
+ * <p>
  * Use the fluent {@link #not()} for negated comparisons, e.g.
- * {@code is(x).not().lte(y)} for "x is not less than or equal to y" (i.e. x &gt; y).
+ * {@code is(x).not().lte(y)} or {@code is(x).not().lessThanOrEqual(y)} for "x &gt; y".
  *
  * @author adigozalpour
  */
@@ -211,6 +215,43 @@ public final class BigDecimalWrapper {
 	public boolean lte(long val) {
 		return lte(BigDecimal.valueOf(val));
 	}
+
+	// ---------- Long-form names (equivalent to eq, gt, gte, lt, lte) ----------
+
+	/** Same as {@link #eq(BigDecimal)}. */
+	public boolean equal(BigDecimal decimal) { return eq(decimal); }
+	/** Same as {@link #eq(double)}. */
+	public boolean equal(double decimal) { return eq(decimal); }
+	/** Same as {@link #eq(long)}. */
+	public boolean equal(long val) { return eq(val); }
+
+	/** Same as {@link #gt(BigDecimal)}. */
+	public boolean greaterThan(BigDecimal decimal) { return gt(decimal); }
+	/** Same as {@link #gt(double)}. */
+	public boolean greaterThan(double decimal) { return gt(decimal); }
+	/** Same as {@link #gt(long)}. */
+	public boolean greaterThan(long val) { return gt(val); }
+
+	/** Same as {@link #gte(BigDecimal)}. */
+	public boolean greaterThanOrEqual(BigDecimal decimal) { return gte(decimal); }
+	/** Same as {@link #gte(double)}. */
+	public boolean greaterThanOrEqual(double decimal) { return gte(decimal); }
+	/** Same as {@link #gte(long)}. */
+	public boolean greaterThanOrEqual(long val) { return gte(val); }
+
+	/** Same as {@link #lt(BigDecimal)}. */
+	public boolean lessThan(BigDecimal decimal) { return lt(decimal); }
+	/** Same as {@link #lt(double)}. */
+	public boolean lessThan(double decimal) { return lt(decimal); }
+	/** Same as {@link #lt(long)}. */
+	public boolean lessThan(long val) { return lt(val); }
+
+	/** Same as {@link #lte(BigDecimal)}. */
+	public boolean lessThanOrEqual(BigDecimal decimal) { return lte(decimal); }
+	/** Same as {@link #lte(double)}. */
+	public boolean lessThanOrEqual(double decimal) { return lte(decimal); }
+	/** Same as {@link #lte(long)}. */
+	public boolean lessThanOrEqual(long val) { return lte(val); }
 
 	/**
 	 * Returns true if the value is greater than zero. E.g. {@code is(x).positive()} or {@code is(x).not().positive()}.
