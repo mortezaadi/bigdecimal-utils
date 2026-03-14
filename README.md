@@ -14,7 +14,7 @@ Maven:
     <dependency>
   	<groupId>ir.cafebabe.math.utils</groupId>
   	<artifactId>bigdecimal-utils</artifactId>
-  	<version>1.3</version>
+  	<version>2.1</version>
     </dependency>
 ```
 
