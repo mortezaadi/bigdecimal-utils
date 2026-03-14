@@ -245,8 +245,9 @@ public final class BigDecimalWrapper {
 	 * @return true if the value is null or zero
 	 */
 	public boolean nullOrZero() {
-		boolean result = (bigDecimal == null || zero());
-		return negate ? !result : result;
+		// Compute raw "null or zero" without using zero(), so negate is applied only once
+		boolean rawNullOrZero = (bigDecimal == null || (bigDecimal.compareTo(BigDecimal.ZERO) == ZERO));
+		return negate ? !rawNullOrZero : rawNullOrZero;
 	}
 
 	public BigDecimal getBigDecimal() {
